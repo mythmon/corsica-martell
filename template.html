@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <title>Martell Logo</title>
+    <style>
+      body {
+        background: #f6f6f6;
+        font-family: "Fira Sans", "Helvetica", sans;
+        overflow: hidden;
+      }
+
+      .logo {
+        position: absolute;
+        top: 4vh;
+        height: 90vh;
+        left: 50vw;
+        transform: translate(-50%, 0);
+      }
+
+      .title {
+        position: absolute;
+        top: 95vh;
+        font-size: 3vh;
+        width: 100vw;
+        text-align: center;
+      }
+
+      .signature {
+        position: absolute;
+        right: 1vw;
+        bottom: 1vh;
+        width: 8vw;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="logo" src="{{ url }}">
+    <img class="signature" src="http://blog.seanmartell.com/wp-content/themes/simplified/images/sig.png?utm_source=corsica">
+    <span class="title">
+      {{ title }}
+    </span>
+  </body>
+</html>
